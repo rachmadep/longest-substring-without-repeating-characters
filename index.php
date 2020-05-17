@@ -7,7 +7,7 @@ $string = readline('Input: ');
 
 $LS->setString($string);
 $lengtChar = $LS->getLengthCharacter();
-$longestSubstring = $LS->getLongestSupstring();
+$longestSubstring = $LS->getLongestSubstring();
 
 echo "Output: {$lengtChar}\n";
 echo "Explanation: The longest substring is '{$longestSubstring}', with the length of {$lengtChar}\n";

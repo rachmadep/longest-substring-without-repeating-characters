@@ -13,7 +13,7 @@ class LongestSubstringTest extends TestCase
         $testString = "ababcdedfg"; // 5 char | abcde
         $LS->setString($testString);
         $lengtChar = $LS->getLengthCharacter();
-        $longestSubstring = $LS->getLongestSupstring();
+        $longestSubstring = $LS->getLongestSubstring();
 
         $this->assertEquals(5, $lengtChar); 
         $this->assertEquals('abcde', $longestSubstring); 

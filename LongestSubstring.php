@@ -3,6 +3,8 @@
 class LongestSubstring {
 
     private $string;
+    private $lengthCharacter;
+    private $longestSubstring;
 
     public function setString($string = null) {
         $this->string = $string;
@@ -28,7 +30,7 @@ class LongestSubstring {
             if(strlen($subs[$i]) > $this->lengthCharacter) 
             { 
                 $this->lengthCharacter = strlen($subs[$i]); 
-                $this->longestSupstring = $subs[$i]; 
+                $this->longestSubstring = $subs[$i]; 
             }
         }
     }
@@ -37,7 +39,7 @@ class LongestSubstring {
         return $this->lengthCharacter;
     }
 
-    public function getLongestSupstring() {
-        return $this->longestSupstring;
+    public function getLongestSubstring() {
+        return $this->longestSubstring;
     }    
 }
